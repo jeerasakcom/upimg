@@ -1,1 +1,9 @@
-<p>upload-details works!</p>
+<table style="width:500px">
+  <tr>
+    <td><img src="{{ fileUpload.url }}" width="100px" height="100px" /></td>
+    <td><a href="{{ fileUpload.url }}">{{ fileUpload.name }}</a></td>
+    <td><button (click)="deleteFileUpload(fileUpload)" class="btn btn-danger btn-sm" style="float: right">
+        Delete
+      </button></td>
+  </tr>
+</table>
